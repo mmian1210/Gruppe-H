@@ -1,0 +1,115 @@
+{
+  "benutzer": [
+    {
+      "id": 1,
+      "name": "Anna Berger",
+      "email": "anna.berger@example.com",
+      "rolle": "Mitarbeiterin",
+      "loginInformationen": {
+        "benutzername": "anna.berger",
+        "letzteAnmeldung": "2026-09-23T08:30:00"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Max Hoffmann",
+      "email": "max.hoffmann@example.com",
+      "rolle": "Management",
+      "loginInformationen": {
+        "benutzername": "max.hoffmann",
+        "letzteAnmeldung": "2026-09-23T09:15:00"
+      }
+    }
+  ],
+  "kunden": [
+    {
+      "id": 1,
+      "firmenname": "Muster GmbH",
+      "kontaktperson": "Julia Steiner",
+      "kontaktinformationen": {
+        "email": "julia.steiner@muster.at",
+        "telefon": "+43 660 1234567"
+      }
+    }
+  ],
+  "mitarbeiter": [
+    {
+      "id": 1,
+      "persoenlicheDaten": {
+        "name": "Anna Berger",
+        "email": "anna.berger@example.com",
+        "telefon": "+43 660 9876543"
+      },
+      "qualifikationen": [
+        "Kundenservice",
+        "Lagerarbeit"
+      ],
+      "verfuegbarkeit": [
+        {
+          "tag": "Montag",
+          "von": "08:00",
+          "bis": "16:00"
+        },
+        {
+          "tag": "Mittwoch",
+          "von": "10:00",
+          "bis": "18:00"
+        }
+      ]
+    }
+  ],
+  "schichten": [
+    {
+      "id": 1,
+      "datum": "2026-10-01",
+      "uhrzeit": {
+        "von": "08:00",
+        "bis": "16:00"
+      },
+      "ort": "Wien",
+      "taetigkeit": "Kundenservice",
+      "benoetigteAnzahl": 2,
+      "status": "offen"
+    }
+  ],
+  "schichtanmeldungen": [
+    {
+      "id": 1,
+      "mitarbeiterId": 1,
+      "schichtId": 1,
+      "angemeldetAm": "2026-09-23T10:00:00",
+      "status": "angemeldet"
+    }
+  ],
+  "anwesenheiten": [
+    {
+      "id": 1,
+      "mitarbeiterId": 1,
+      "schichtId": 1,
+      "erschienen": true,
+      "kontrolliertAm": "2026-10-01T08:05:00",
+      "kontrolliertDurch": "Muster GmbH"
+    }
+  ],
+  "praemien": [
+    {
+      "id": 1,
+      "mitarbeiterId": 1,
+      "kundeId": 1,
+      "anzahlSchichten": 5,
+      "zeitraum": "Oktober 2026",
+      "praemienstatus": "erreicht",
+      "betrag": 100
+    }
+  ],
+  "benachrichtigungen": [
+    {
+      "id": 1,
+      "empfaengerId": 1,
+      "nachricht": "Ihre Schicht am 01.10.2026 wurde bestätigt.",
+      "zeitpunkt": "2026-09-23T11:00:00",
+      "gelesen": false
+    }
+  ]
+}
+
